@@ -2,7 +2,7 @@
 
 namespace Windows_Forms_Sample
 {
-    partial class Form1
+    partial class LoginPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -82,7 +82,7 @@ namespace Windows_Forms_Sample
             LoginBtn.TabIndex = 4;
             LoginBtn.Text = "Login";
             LoginBtn.UseVisualStyleBackColor = true;
-            LoginBtn.Click += button1_Click;
+            LoginBtn.Click += LoginBtn_Click;
             // 
             // CancelBtn
             // 
@@ -110,8 +110,8 @@ namespace Windows_Forms_Sample
             Controls.Add(UsernameTxtbox);
             Controls.Add(PasswordLbl);
             Controls.Add(UserNameLbl);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "LoginPage";
+            Text = "Login Page";
             ((System.ComponentModel.ISupportInitialize)ErrorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
