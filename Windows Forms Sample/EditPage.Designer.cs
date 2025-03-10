@@ -67,8 +67,8 @@
             this.CourseDropdown.Items.AddRange(new string[] { "ABEL", "BSBA", "BSIT", "BPA" });
             this.CourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
-            // Year Dropdown
-            this.YearDropdown.Items.AddRange(new string[] { "1st Year", "2nd Year", "3rd Year", "4th Year" });
+            // Year Dropdown (Fixed as First, Second, Third, Fourth)
+            this.YearDropdown.Items.AddRange(new string[] { "First", "Second", "Third", "Fourth" });
             this.YearDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             // Save Button

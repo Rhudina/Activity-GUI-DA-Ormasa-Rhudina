@@ -17,7 +17,6 @@
 
         private void InitializeComponent()
         {
-
             this.StudentPictureBox = new System.Windows.Forms.PictureBox();
             this.AddImageBtn = new System.Windows.Forms.Button();
             this.ChangeImageBtn = new System.Windows.Forms.Button();
@@ -59,10 +58,19 @@
                 this.Controls.Add(this.TextBoxes[i]);
             }
 
-            // Student Image Placeholder
+            // Student Image Placeholder with default image
             this.StudentPictureBox.Location = new System.Drawing.Point(20, 20);
             this.StudentPictureBox.Size = new System.Drawing.Size(120, 120);
             this.StudentPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            try
+            {
+                this.StudentPictureBox.Image = System.Drawing.Image.FromFile("inah.jpg"); // Load default image
+            }
+            catch
+            {
+                // If image is not found, it will remain empty
+            }
             this.Controls.Add(this.StudentPictureBox);
 
             // Add Image Button
